@@ -14,15 +14,6 @@ T = 300.2  # Kelvin
 density_resin = 1.2 * 10 ** 3
 density_water = 1.0 * 10 ** 3
 
-
-def E(h: float) -> float:
-    return (density_resin - density_water) * g * h * V
-
-
-def p(h: float, k: float) -> float:
-    return math.e ** (-E(h) / (k * T))
-
-
 depths = np.array([0, 18, 33, 46, 57, 71]) * 10 ** -6
 spheres = np.array([131, 214, 312, 437, 625, 877])
 log_spheres = np.log(spheres)
