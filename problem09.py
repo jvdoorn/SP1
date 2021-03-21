@@ -48,6 +48,6 @@ axs[1, 1].plot(depths, math.e ** (fit[0] * depths + fit[1]))
 axs[1, 1].set_xlabel('depth [m]')
 axs[1, 1].set_ylabel('# spheres')
 
-plt.savefig('/Users/julian/OneDrive - Universiteit Leiden/SP1/svg/problem09.svg')
+plt.savefig('export/problem09.svg')
 
 plt.show()
